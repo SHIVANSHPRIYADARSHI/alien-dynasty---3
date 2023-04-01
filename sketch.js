@@ -6,49 +6,49 @@ var playimg,level1img,leftwall,rightwall
 
 function preload() {
 
-    bgimg = loadImage("assets/alienDynasty.gif")
-level1img=loadImage("assets/level1bg.jpeg")
-platform1img=loadImage("assets/platform.png")
-platform2img=loadImage("assets/platform_2.png")
-enemy1=loadImage("assets/enemy1-unscreen.gif")
-enemy2=loadImage("assets/enemy2-unscreen.gif")
-enemy3=loadImage("assets/enemy3-unscreen.gif")
-enemy4=loadImage("assets/enemy4-unscreen.gif")
-enemy5=loadImage("assets/enemy-5-unscreen.gif")
-aestronaut=loadImage("assets/aestronautAlien-removebg-preview.png")
-gameOverImg=loadImage("assets/gameover.jpg")
-popUpImg=loadImage("assets/AboutGame.png")
+    bgimg = loadImage("alienDynasty.gif")
+level1img=loadImage("level1bg.jpeg")
+platform1img=loadImage("platform.png")
+platform2img=loadImage("platform_2.png")
+enemy1=loadImage("enemy1-unscreen.gif")
+enemy2=loadImage("enemy2-unscreen.gif")
+enemy3=loadImage("enemy3-unscreen.gif")
+enemy4=loadImage("enemy4-unscreen.gif")
+enemy5=loadImage("enemy-5-unscreen.gif")
+aestronaut=loadImage("aestronautAlien-removebg-preview.png")
+gameOverImg=loadImage("gameover.jpg")
+popUpImg=loadImage("AboutGame.png")
 
-bgmusic=loadSound("assets/bgMusic.mp3")
-coinCollecting=loadSound("assets/coincollectsound.mp3")
-jumpSound=loadSound("assets/jump.mp3")
-gameOverSound=loadSound("assets/gameoversound.mp3")
+bgmusic=loadSound("bgMusic.mp3")
+coinCollecting=loadSound("coincollectsound.mp3")
+jumpSound=loadSound("jump.mp3")
+gameOverSound=loadSound("gameoversound.mp3")
 }
 
 
 function setup() {
     createCanvas(windowWidth, windowHeight)
 
-    playbutton = createImg("assets/play_btn.png")
+    playbutton = createImg("play_btn.png")
     playbutton.position(width / 2 - 250, height - 145)
     playbutton.size(160, 150)
 
     playbutton.hide()
 
 
-   soundbutton = createImg("assets/sound_btn.png")
+   soundbutton = createImg("sound_btn.png")
    soundbutton.position(width / 2 + 80, height - 150)
    soundbutton.size(150, 150)
    soundbutton.hide()
 
 
-  mutebutton = createImg("assets/mute.png")
+  mutebutton = createImg("mute.png")
   mutebutton.position(width / 2 + 70, height - 150)
   mutebutton.size(165, 150)
   mutebutton.hide()
 
 
-  level1popbutton=createImg("assets/AboutGame.png")
+  level1popbutton=createImg("AboutGame.png")
   level1popbutton.position(width/4,height/4)
   level1popbutton.size(1000,500)
   level1popbutton.hide()
